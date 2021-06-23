@@ -1,0 +1,12 @@
+**Test Info**
+Test Name: jdk_util_0
+Test Duration: 31 min 56 sec
+Machine: build-osuosl-aix71-ppc64-1
+TRSS link for the test output: https://trss.adoptopenjdk.net/output/test?id=5f0a74bf7eaab3443c9c4062
+
+
+**Build Info**
+Build Name: Test_openjdk11_hs_sanity.openjdk_ppc64_aix
+Jenkins Build start time: Jul 11 2020, 08:55 pm
+Jenkins Build URL: https://ci.adoptopenjdk.net/job/Test_openjdk11_hs_sanity.openjdk_ppc64_aix/145/
+TRSS link for the build: https://trss.adoptopenjdk.net/allTestsInfo?buildId=5f0a742f7eaab3443c9c3b00
