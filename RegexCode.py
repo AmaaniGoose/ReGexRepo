@@ -10,7 +10,7 @@ def store_on_files(data, file_name):
     if data:
         try:
             with open(file_name, "a", encoding='utf-8') as f:
-                f.write(str(data))
+                f.write(str(data) + "\n")
         except:
             return 
 
@@ -18,7 +18,9 @@ def store_on_files(data, file_name):
 def regexify(s):
     pattern = r"(?:(?:http|ftp|https):\/\/ci\.adoptopenjdk\.net.+\/(?=console))|(?:Test_openjdk\d.+\/)?" #For explanation visit https://regexr.com/60jmf
     substring = re.findall(pattern, s)
-    result=' '.join(substring)
+    substring=list(filter(lambda x: x!='', substring))
+    print(substring)
+    result=''.join(substring)
     if result:
         try:
             return result
