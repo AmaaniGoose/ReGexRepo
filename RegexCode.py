@@ -16,9 +16,9 @@ def store_on_files(data, file_name):
 
 
 def regexify(s):
-    pattern = r"(?:(?:http|ftp|https):\/\/ci.adoptopenjdk.net.+(?:consoleFull|console|\d?))|(?:\`.+?\`)" #For explanation visit https://regexr.com/60jmf
+    pattern = r"(?:(?:http|ftp|https):\/\/ci\.adoptopenjdk\.net.+\/(?=console))|(?:Test_openjdk\d.+\/)?" #For explanation visit https://regexr.com/60jmf
     substring = re.findall(pattern, s)
-    result='\n'.join(substring)
+    result=' '.join(substring)
     if result:
         try:
             return result
